@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Predict Average Time</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Predict Average Time</h1>
+        <form action="/predict" method="post" class="mt-4">
+            <div class="form-group">
+                <label for="truck_slots">Truck Slots</label>
+                <input type="text" class="form-control" id="truck_slots" name="truck_slots" required>
+            </div>
+            <div class="form-group">
+                <label for="car_slots">Car Slots</label>
+                <input type="text" class="form-control" id="car_slots" name="car_slots" required>
+            </div>
+            <div class="form-group">
+                <label for="arrival_rate">Arrival Rate</label>
+                <input type="text" class="form-control" id="arrival_rate" name="arrival_rate" required>
+            </div>
+            <div class="form-group">
+                <label for="queue_length">Queue Length</label>
+                <input type="text" class="form-control" id="queue_length" name="queue_length" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
